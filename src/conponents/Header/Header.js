@@ -1,20 +1,24 @@
 import React from "react";
+import img from "../../conponents/assets/header-img.png";
 
 const Header = () => {
   const menu = (
     <li>
-      <a href="">Home</a>
+      <a href="#">Home</a>
       <a href="#">Skills</a>
-      <a href="#">Projects</a>
+      <a href="#projects-section">Projects</a>
       <a href="#">About Us</a>
-      <a target='_blank' href="https://drive.google.com/file/d/12Z9Q1vT8Lp3DoOIRHhSI9vamvijg5fn9/view?usp=sharing">
+      <a
+        target="_blank"
+        href="https://drive.google.com/file/d/12Z9Q1vT8Lp3DoOIRHhSI9vamvijg5fn9/view?usp=sharing"
+      >
         Resume
       </a>
     </li>
   );
 
   return (
-    <div>
+    <div className="sticky">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -41,13 +45,15 @@ const Header = () => {
               {menu}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <img className="w-36" src={img} alt="" />
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menu}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Connect</a>
+          <a href="#contact" className="btn">
+            Contact
+          </a>
         </div>
       </div>
     </div>

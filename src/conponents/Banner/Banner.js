@@ -1,6 +1,7 @@
 import React from "react";
-import coadingImg from '../assets/coading.jpg';
 import './Banner.css';
+import Lottie from "lottie-react";
+import coading from '../assets/coding.json';
 
 const Banner = () => {
   return (
@@ -18,7 +19,7 @@ const Banner = () => {
           </p>
         </div>
         <div className="right-side">
-            <img src={coadingImg} alt="" />
+        <Lottie animationData={coading} loop={true}></Lottie>
         </div>
       </div>
     </div>

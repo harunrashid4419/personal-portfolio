@@ -1,0 +1,44 @@
+.main-contact{
+    width: 90%;
+    margin: auto;
+}
+.main-contact .contact-section{
+    display: flex;
+}
+.contact-section .animation{
+    width: 50%;
+}
+.contact-section .text{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.contact-section .touch{
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.contact-section .button-send{
+    background-color: black;
+    padding: 10px 50px;
+    font-weight: bold;
+    transition: .8s;
+}
+.contact-section .button-send:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 776px) {
+    .main-contact .contact-section{
+        display: block;
+    }
+    .contact-section .animation{
+        width: 100%;
+    }
+    .contact-section .text{
+        width: 100%;
+    }
+}

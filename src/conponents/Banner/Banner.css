@@ -48,5 +48,7 @@
     .banner-section .right-side{
         width: 100%;
         margin-top: 50px;
+        display: block;
+        text-align: center;
     }
 }

@@ -1,0 +1,32 @@
+.project-section{
+    width: 90%;
+    margin: auto;
+    padding: 60px 0;
+}
+.project-section h3{
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+}
+.project-section p{
+    font-size: 16px;
+    text-align: center;
+    max-width: 700px;
+    margin: 10px auto;
+}
+.project-section .projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+@media screen and (max-width:992px) {
+    .project-section .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:776px) {
+    .project-section .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
