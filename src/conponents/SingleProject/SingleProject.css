@@ -8,17 +8,17 @@
 }
 .single-project .img{
     width: 40%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
 }
 .single-project .img img{
     border-radius: 5px;
     width: 100%;
+    margin-bottom: 15px;
 }
 .single-project .content{
     width: 60%;
-    margin-left: 50px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
 }
 .single-project .content h3{
     font-size: 32px;
@@ -82,11 +82,20 @@
     .single-project .img{
         width: 100%;
         order: 2;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
     .single-project .content{
         width: 100%;
         margin-left: 0px;
         order: 1;
         margin-top: 50px;
+    }
+}
+@media screen and (max-width: 776px) {
+    .single-project .img{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
     }
 }

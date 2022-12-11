@@ -1,3 +1,38 @@
 .main-about{
-    
+    width: 90%;
+    margin: 0 auto;
+}
+.main-about .about-me{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.main-about .about-img{
+    display: flex;
+    justify-content: center;
+}
+.main-about .about-me img{
+    width: 200px;
+    border-radius: 25px;
+}
+.main-about .about-content{
+    display: flex;
+    align-items: center;
+}
+.main-about .about-content h3{
+    font-size: 42px;
+    font-weight: bold;
+}
+.main-about .about-content p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 776px) {
+    .main-about .about-me{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-about .about-content{
+        margin-top: 30px;
+    }
 }

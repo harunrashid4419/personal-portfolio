@@ -12,7 +12,7 @@ const Header = () => {
       <a href="#projects-section">Projects</a>
       <a href="#about">About Us</a>
 
-      <a href="#">Blogs</a>
+      <a href="#blog">Blogs</a>
       <a href="#contact">Contact</a>
       <a target="_blank" href="https://www.facebook.com/mdharun.orrashid.79827">
         <FaFacebookF />
