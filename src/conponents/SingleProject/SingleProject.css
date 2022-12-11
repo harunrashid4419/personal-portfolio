@@ -1,0 +1,92 @@
+.main-single-project{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.single-project{
+    display: flex;
+}
+.single-project .img{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.single-project .img img{
+    border-radius: 5px;
+    width: 100%;
+}
+.single-project .content{
+    width: 60%;
+    margin-left: 50px;
+}
+.single-project .content h3{
+    font-size: 32px;
+    font-weight: 600;
+    color: orange;
+}
+.single-project .content h6{
+    font-size: 18px;
+    color: white;
+    margin: 15px 0;
+    font-weight: 300;
+}
+.single-project .content .feature{
+    font-size: 28px;
+    color: white;
+    margin: 15px 0;
+    font-weight: 700;
+}
+.single-project .content .bullet-point{
+    font-size: 18px;
+    color: white;
+    margin: 15px 0;
+    font-weight: 300;
+    position: relative;
+    left: 25px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.single-project .content .bullet-point::before {
+    content: '';
+    position: absolute;
+    background: white;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    left: -25px;
+    top: 7px;
+}
+.single-project .button-send{
+    background-color: black;
+    padding: 10px 50px;
+    font-weight: bold;
+    transition: .8s;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.single-project .button-send:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.single-project .button-send:nth-child(3){
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .single-project{
+        display: block;
+        flex-direction: row-reverse;
+    }
+    .single-project .img{
+        width: 100%;
+        order: 2;
+    }
+    .single-project .content{
+        width: 100%;
+        margin-left: 0px;
+        order: 1;
+        margin-top: 50px;
+    }
+}

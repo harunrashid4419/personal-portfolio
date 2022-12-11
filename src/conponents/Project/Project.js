@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Project.css";
 
 const Project = ({ project }) => {
-  const { name, img, description, link } = project;
+  const { name, img, description, link, id } = project;
   return (
     <div className="project">
       <img src={img} alt="" />
@@ -11,15 +11,15 @@ const Project = ({ project }) => {
         <h4>
           <span>Project Name:</span> {name}
         </h4>
-        <h5>
-          <span>Description:</span> {description}
+        {
+          description.length > 100 ? <h5>
+          <span>Description:</span> {description.slice(0, 50)  + '...'}
         </h5>
-        <a
-          target="_blank"
-          href={link}
-        >
-          <button className="button-send">Visit Site</button>
-        </a>
+        : {description}
+        }
+        <Link to={`/projects/${id}`}>
+          <button className="button-send">Explore More</button>
+        </Link>
       </div>
     </div>
   );

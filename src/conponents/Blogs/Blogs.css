@@ -1,0 +1,16 @@
+.main-blog{
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.main-blog .blog-section h3{
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.main-blog .blog-section p{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 20px;
+}
