@@ -1,0 +1,24 @@
+.sideBar{
+    display: flex;
+    padding: 0px 0 20px 0;
+}
+.sideBar a{
+    border: 1px solid green;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: white;
+    transition: .5s;
+}
+.sideBar .facebook:hover{
+    background-color: #425991;
+    border: 1px solid #425991;
+}
+.sideBar .github:hover{
+    background-color: #dc5041;
+    border: 1px solid #dc5041;
+}
+.sideBar .linkedin:hover{
+    background-color: #4ba2e4;
+    border: 1px solid #4ba2e4;
+}

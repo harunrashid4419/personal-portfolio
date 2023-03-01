@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Project.css";
 
 const Project = ({ project }) => {
-  const { name, img, description, link, id } = project;
+  const { name, img, description, id } = project;
   return (
     <div className="project">
       <img src={img} alt="" />

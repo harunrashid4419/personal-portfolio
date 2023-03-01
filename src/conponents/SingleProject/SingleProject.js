@@ -16,15 +16,57 @@ const SingleProject = () => {
     client_code,
     link,
   } = project;
-  console.log(project);
+
   return (
     <div className="main-single-project">
       <div className="single-project">
         <div className="img">
-          <img src={img} alt="" />
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />
-          <img src={img3} alt="" />
+          <div className="carousel w-full">
+            <div id="slide1" className="carousel-item relative w-full">
+              <img src={img} alt="slider img" className="w-full" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide2" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div id="slide2" className="carousel-item relative w-full">
+              <img src={img1} alt="slider img" className="w-full" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide3" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div id="slide3" className="carousel-item relative w-full">
+              <img src={img2} alt="slider img" className="w-full" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide4" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div id="slide4" className="carousel-item relative w-full">
+              <img src={img3} alt="slider img" className="w-full" />
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide1" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="content">
           <div>

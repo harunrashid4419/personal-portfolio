@@ -8,6 +8,8 @@
 }
 .single-project .img{
     width: 40%;
+    display: flex;
+    align-items: center;
 }
 .single-project .img img{
     border-radius: 5px;
@@ -17,8 +19,6 @@
 .single-project .content{
     width: 60%;
     margin-left: 70px;
-    display: flex;
-    align-items: center;
 }
 .single-project .content h3{
     font-size: 32px;
@@ -46,6 +46,7 @@
     left: 25px;
     margin-left: 20px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 .single-project .content .bullet-point::before {
     content: '';
@@ -58,16 +59,17 @@
     top: 7px;
 }
 .single-project .button-send{
-    background-color: black;
+    background-color: white;
     padding: 10px 50px;
     font-weight: bold;
     transition: .8s;
     margin-left: 10px;
     margin-bottom: 10px;
+    color: black;
 }
 .single-project .button-send:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 5px;
 }
 .single-project .button-send:nth-child(3){

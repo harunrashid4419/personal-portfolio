@@ -1,0 +1,53 @@
+.skills-section{
+    width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+.skill-slider{
+    width: 80%;
+    margin: 0 auto;
+}
+.skills-section h1{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #a6adba;
+    letter-spacing: 5px;
+}
+.skills-section .item{
+    text-align: center;
+}
+.skills-section .item .skill_img{
+    margin: 0 auto;
+    width: 65%;
+    position: relative;
+}
+.skills-section .percentage {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 28px;
+    color: wheat;
+    margin-top: px;
+}
+.skills-section .item h5{
+    font-family: lobster;
+    font-size: 24px;
+    color: white;
+    margin-top: 15px;
+}
+.react-multiple-carousel__arrow--left {
+    left: calc(0% + 1px);
+}
+.react-multiple-carousel__arrow--right {
+    right: calc(0% + 1px);
+}
+
+@media screen and (max-width: 776px) {
+    .skills-section{
+        width: 90%;
+        padding: 80px 0;
+    }
+}

@@ -1,37 +1,22 @@
 import React from "react";
-import img from "../../conponents/assets/header-img.png";
 import "./Header.css";
-import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   const menu = (
     <li>
       <a href="/">Home</a>
-      <a href="#">Skills</a>
-      <a href="#projects-section">Projects</a>
       <a href="#about">About Us</a>
-
+      <a href="#skills-section">Skills</a>
+      <a href="#projects-section">Projects</a>
       <a href="#blog">Blogs</a>
       <a href="#contact">Contact</a>
-      <a target="_blank" href="https://www.facebook.com/mdharun.orrashid.79827">
-        <FaFacebookF />
-      </a>
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/in/md-harun-or-rashid2/"
-      >
-        <FaLinkedinIn />
-      </a>
-      <a target="_blank" href="https://github.com/harunrashid4419">
-        <FaGithub />
-      </a>
     </li>
   );
 
   return (
     <div className="header-section">
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 flex justify-between items-center">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -57,21 +42,12 @@ const Header = () => {
               {menu}
             </ul>
           </div>
-          <Link to="/">
-            <img className="w-36" src={img} alt="" />
-          </Link>
+          <div className="header">
+            <Link to="/">Md. Harun Or Rashid</Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{menu}</ul>
-        </div>
-        <div className="navbar-end">
-          <a
-            className="btn"
-            target="_blank"
-            href="https://drive.google.com/file/d/12Z9Q1vT8Lp3DoOIRHhSI9vamvijg5fn9/view?usp=sharing"
-          >
-            Resume
-          </a>
         </div>
       </div>
     </div>

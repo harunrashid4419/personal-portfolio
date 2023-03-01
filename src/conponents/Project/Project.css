@@ -2,6 +2,10 @@
     background-color: gray;
     padding: 20px;
     border-radius: 10px;
+    transition: .8s;
+}
+.project:hover{
+    transform: translateY(20px);
 }
 .project img{
     border-radius: 10px;
@@ -24,13 +28,14 @@
     margin-bottom: 10px;
 }
 .project .button-send{
-    background-color: black;
+    background-color: white;
     padding: 10px 50px;
     font-weight: bold;
     transition: .8s;
+    color: black;
 }
 .project .button-send:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 5px;
 }

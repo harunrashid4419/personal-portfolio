@@ -14,10 +14,17 @@
     display: flex;
     align-items: center;
 }
+.contact-section .text input:focus{
+    border: none;
+}
+.contact-section .text textarea:focus{
+    border: none;
+}
 .contact-section .touch{
     font-size: 32px;
     margin-bottom: 20px;
     font-weight: bold;
+    letter-spacing: 5px;
 }
 .contact-section .button-send{
     background-color: black;
