@@ -15,7 +15,6 @@ const Banner = () => {
           <h1>
             I'm{" "}
             <span style={{ color: "white", fontWeight: "bold" }}>
-              {/* Style will be inherited from the parent element */}
               <Typewriter
                 words={[
                   "MERN Stack Developer",

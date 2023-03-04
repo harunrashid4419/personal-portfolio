@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import "./SingleProject.css";
 
 const SingleProject = () => {
+  
   const project = useLoaderData();
   const {
     img,
@@ -71,7 +72,7 @@ const SingleProject = () => {
         <div className="content">
           <div>
             <h3>Project Name: {name}</h3>
-            <h6>Description: {description}</h6>
+            <h6><b>Description:</b> {description}</h6>
             <p className="feature">Features:</p>
             {features.map((feature) => (
               <p className="bullet-point">{feature}</p>
